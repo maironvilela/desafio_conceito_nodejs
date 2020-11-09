@@ -91,7 +91,7 @@ app.post("/repositories/:id/like", repositoryIdValidate, (request, response) => 
 
   repositories[repositoryIndex] = {...repositories[repositoryIndex], likes: likes}
 
-  return response.status(201).json(repositories[repositoryIndex]);
+  return response.json(repositories[repositoryIndex]);
 });
 
 
